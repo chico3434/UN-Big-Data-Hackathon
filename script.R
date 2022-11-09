@@ -37,3 +37,12 @@ total.deaths.rwanda <- sum(data.regional.hubs[which(data.regional.hubs$Country =
 total.deaths.regional.hubs <- c(total.deaths.brazil, total.deaths.china, total.deaths.rwanda)
 total.deaths.regional.hubs
 
+total.affected.brazil <- sum(data.regional.hubs[which(data.regional.hubs$Country == 'Brazil'),]$Total.Affected)
+
+total.affected.china <- sum(data.regional.hubs[which(data.regional.hubs$Country == 'China'),]$Total.Affected)
+
+total.affected.rwanda <- sum(data.regional.hubs[which(data.regional.hubs$Country == 'Rwanda'),]$Total.Affected)
+
+total.affected.regional.hubs <- c(total.affected.brazil, total.affected.china, total.affected.rwanda)
+total.affected.regional.hubs
+
