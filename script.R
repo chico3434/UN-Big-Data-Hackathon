@@ -131,5 +131,7 @@ legend("topright",
        lty = 1,
        col = 2:4)
 
-
+table(data.with.deaths.affected$Disaster.Type)
+table(data.with.deaths.affected$Disaster.Subtype)
+table(data.with.deaths.affected$Continent, data.with.deaths.affected$Disaster.Subtype)
 
