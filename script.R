@@ -19,9 +19,9 @@ table(data.regional.hubs$Country)
 disasters.by.country <-  as.factor(data.regional.hubs$Country)
 table(disasters.by.country, data.regional.hubs$Year)['Brazil',]
 plot(table(disasters.by.country, data.regional.hubs$Year))
-plot(table(disasters.by.country, data.regional.hubs$Year)['China',], type='l', col=2, xlab='Ano (a partir de 1970)', ylab='Número de desastres')
-lines(table(disasters.by.country, data.regional.hubs$Year)['Brazil',], type='l', col=3)
-lines(table(disasters.by.country, data.regional.hubs$Year)['Rwanda',], type='l', col=4)
+plot(c(1970,1971,1974:2021), table(disasters.by.country, data.regional.hubs$Year)['China',], type='l', col=2, xlab='Ano', ylab='Número de desastres')
+lines(c(1970,1971,1974:2021), table(disasters.by.country, data.regional.hubs$Year)['Brazil',], type='l', col=3)
+lines(c(1970,1971,1974:2021), table(disasters.by.country, data.regional.hubs$Year)['Rwanda',], type='l', col=4)
 legend("topleft",                           
        c("China", "Brazil", "Rwanda"),
        lty = 1,
@@ -130,5 +130,6 @@ legend("topright",
        c("China", "Brazil", "Rwanda"),
        lty = 1,
        col = 2:4)
+
 
 
